@@ -220,6 +220,23 @@ void	ClonaPalabras(
 	}
 	strcpy_s(szPalabrasSugeridas[iNumSugeridas++], szPalabraLeida);
 
+	//Método burbuja, para el ordenamiento.
+	for (int j = 0; j < iNumSugeridas - 1; j++) {
+
+		for (int i = j + 1; i < iNumSugeridas; i++) {
+
+			if (strcmp(szPalabrasSugeridas[j], szPalabrasSugeridas[i]) > 0) {
+				/*Lista de palabras clonadas al aux*/
+				strcpy_s(aux, szPalabrasSugeridas[j]);
+				strcpy_s(szPalabrasSugeridas[j], szPalabrasSugeridas[i]);
+				strcpy_s(szPalabrasSugeridas[i], aux);
+			}
+		}
+	}
+
+	
+}
+
 
 	
 
