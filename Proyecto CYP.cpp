@@ -140,4 +140,17 @@ void Diccionario(char* szNombre, char szPalabras[][TAMTOKEN], int iEstadisticas[
 	}
 }
 
+/*****************************************************************************************************************
+	ClonaPalabras: toma una palabra y obtiene todas las combinaciones y permutaciones requeridas por el metodo
+	char *	szPalabraLeida,						//Palabra a clonar   palabra
+	char	szPalabrasSugeridas[][TAMTOKEN], 	//Lista de palabras clonadas
+	int &	iNumSugeridas)						//Numero de elementos en la lista
+******************************************************************************************************************/
+void	ClonaPalabras(
+	char* szPalabraLeida,						// Palabra a clonar
+	char  szPalabrasSugeridas[][TAMTOKEN], 	    //Lista de palabras clonadas
+	int& iNumSugeridas)						    //Numero de elementos en la lista
+{
+	
+
 
